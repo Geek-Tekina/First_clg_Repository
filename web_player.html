@@ -1,1 +1,239 @@
-<!-- This is the HTML Page for Web-player page. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0%;
+            
+            box-sizing:border-box;
+        }
+        body{
+            background-color:rgba(17, 17, 17, 0.945);
+        }
+        .webPlayer{
+            
+        }
+        <!---->
+        .sidenav{
+            margin-top:-15px;
+            width:18.8%;
+            float:left;
+            position:fixed;
+        }
+        ul.sidenavbar{
+            background-color:black;
+            height:820px;
+            padding-left:0px;
+        }
+        .sidenavbar a{
+            display:block;
+        }
+        .sidebar{
+            margin-top:15px;
+            padding-top:5px;
+            text-decoration: none;
+            text-align:left;
+            padding-left: 50px;
+            font-size: large;
+            color:rgba(202, 198, 198, 0.87);
+
+        }
+        .sidebar:hover{
+            color: #ffffff;
+        }
+        <!---->
+        #one{
+            margin-bottom: 30px;
+            font-size: x-large;
+
+
+        }
+        #two{
+            background-color:rgba(57, 58, 58, 0.568);
+            color:aliceblue;
+            border-color: rgba(57, 58, 58, 0.568);
+            border-style: solid;
+            border-radius: 5px;
+            padding:15px;
+            padding-left: 50px;
+            margin-right: 7px;
+            margin-left: 7px;
+            
+        }
+        #five{
+            margin-top:45px;
+        }
+        #seven{
+            position:absolute;
+            bottom:50px;
+            text-decoration:none;
+            font-size:x-small;
+            padding:4px;
+            margin-top:3px;
+            margin-bottom: 3px;
+            margin-left: 20px;
+            color:aliceblue;
+        }
+        
+        #eight{
+            position: absolute;
+            bottom: 30px;
+            text-decoration: none;
+            
+            font-size: x-small;
+            padding:4px;
+            margin-left:20px;
+            margin-top:8px;
+            color:aliceblue;
+            
+        }
+        :hover#eight{
+            text-decoration:underline;
+            text-align: left;
+            
+            
+
+        }
+        :hover#seven{
+            text-decoration: underline;
+            text-align: left;
+        }
+        :hover.bottom_sidebar{
+            text-decoration:underline;
+            text-align: left;
+           
+
+
+        }
+        .sidebar:active{
+            background-color: darkgray;
+            border-style: solid;
+            border-radius:5px;
+            padding:15px;
+        }
+        <!---->
+
+        section{
+            
+            background-color: rgba(14, 13, 13, 0.705);
+            width:1710px;
+            position:fixed;
+            
+            margin-left: 320px;
+            height:65px;
+            line-height:70px;
+        }
+        
+        .leftTopnav a{
+            color:gray;
+        }
+        
+        .leftTopnav li{
+            display:inline-block;
+        }
+        #a{
+            padding: 0 10.5px;
+            text-decoration:none;
+            font-size: x-large;
+            margin-top:15px;
+            width: 35px;
+            height: 35px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color: rgb(17, 17, 17);
+            background-color: rgba(14, 13, 13, 0.836);
+             }
+         #b{
+            padding: 0 10px;
+            text-decoration: none;
+            font-size: x-large;
+            margin-top: 15px;
+            margin-left:20px;
+            width: 38px;
+            height: 26px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color: rgb(17, 17, 17);
+            background-color: rgba(14, 13, 13, 0.836);
+            line-height: 20px;
+            
+         }  
+         .rightTopnav{
+             margin-top:-80px;
+             margin-left: 1100px;  
+         }
+         .rightTopnav li{
+             display:inline-block;
+             
+             
+         }
+         .rightTopnav li a{
+             text-decoration: none;
+             
+         }
+         .rightTopnav button a{
+             text-decoration: none;
+         }
+         button{
+            background-color:transparent;
+            text-align: center;
+            
+            
+            border:1px solid transparent;
+         }
+         #c{
+            color:#ffffff;
+             
+            
+         }
+         button:hover{
+            transform: scale(1.06);
+         }
+         #d{
+             
+             padding-left: 20px;
+             background-color:#fff;
+             padding:15px 40px;
+             border-radius: 20px;
+             color:black;
+         }
+             
+    </style>
+</head>
+<body>
+    <div class="webPlayer">
+    
+    <div class="sidenav">
+        <ul class="sidenavbar">
+            <li><a class="sidebar" id="one" href="#">Spotify</a></li>
+            <l1><a class="sidebar" id="two" href="#">Home</a> </l1>
+            <l1><a class="sidebar" id="three" href="#">Search</a> </l1>
+            <l1><a class="sidebar" id="four" href="#">Your Library</a> </l1>
+            <l1><a class="sidebar" id="five" href="#">Create playlist</a> </l1>
+            <l1><a class="sidebar" id="six" href="#">Liked Songs</a> </l1>
+            <l1><a class="bottom_sidebar"id="seven" href="#" >Cookies</a></l1>
+            <l1><a class="bottom_sidebar" id="eight" href="#">Privacy</a> </l1>
+        </ul>
+    </div>
+    <section class="topnavbar">
+        <ul class="leftTopnav">
+            <li><a class="topbarLeft" id="a" href="#">&#60;</a></li>
+            <li><a class="topbarLeft" id="b" href="#">&#62;</a></li>
+            </ul>
+            <div>
+                <ul class="rightTopnav">
+                    <button><a class="topbarRight" id="c" href="#">SIGN UP</a></button>
+                    <button><a class="topbarRight" id="d" href="#">LOG IN</a></button>
+                </ul>
+            </div>
+    </section>
+
+</div>
+
+    
+</body>
+</html>
